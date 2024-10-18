@@ -1,0 +1,30 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+
+  - title: all posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+
+  - title: posts by category
+    post_list:
+      category: example2
+      show_more: true
+      show_more_text: See more posts...
+      show_more_url: example2-archive.html
+
+  - title: Links
+    entries:
+      - title: with subitems
+        entries:
+          - title: Github
+            url: https://github.com/abrek-koc
+          - title: LinkedIn
+            url: https://www.linkedin.com/in/abrekkoch/
+  - title: Work In Progress
+    entries:
+      - title: The website is still under construction
