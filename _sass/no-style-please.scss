@@ -1,0 +1,129 @@
+@import 'colors';
+
+@font-face {
+    font-family: 'ProggyClean';
+    src: url('/assets/fonts/ProggyClean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+// bg color is also needed in html in order to
+// block body's background propagation
+// see: https://stackoverflow.com/a/61265706
+html, body { background: $outer-bg-color; }
+
+html { height: 100%; }
+
+body {
+  color: $fg-color;
+  font-family: 'ProggyClean', monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+.post-meta { text-align: right; }
+
+.site-title { 
+  font-size: 36pt;
+  letter-spacing: 2pt;
+}
+
+.post-content {
+  font-family: 'ProggyClean', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.post-content h2, .post-content h3, .post-content h4,
+.post-content h5, .post-content h6, .post-content a {
+  font-family: 'ProggyClean', monospace;
+}
+
+h2, h3, h4, h5, h6 { margin-top: 3rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1rem 0; }
+
+li { margin: 0.4rem 0; }
+
+*:target { background: yellow; }
+
+.w {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1em 2rem;
+  background-color: $bg-color;
+  box-shadow: 3pt;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+code {
+  color: white;
+  background: black;
+}
+
+div.highlighter-rouge code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  padding: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border: thin solid black;
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: $link-color;
+}
+
+// -------------- THEME SWITCHER -------------- //
+/*
+ @mixin dark-appearance {
+  filter: invert(1);
+  img {
+    filter: invert(1);
+
+    &.ioda { filter: invert(0); }
+  }
+
+  html, body {
+    background: black; 
+  }
+}
+
+body[a="dark"] { @include dark-appearance; }
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] { @include dark-appearance; }
+}*/
+// -------------------------------------------- //

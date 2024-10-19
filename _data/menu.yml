@@ -1,0 +1,26 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+ 
+entries:
+  - title: <b>Article Corner</b>
+    entries:
+      - title: my articles >
+        url: archive.html
+
+      - title: recommended articles >
+        url: reco_list.html
+
+  - title: <b> my links  </b>
+    entries:
+      - title: github
+        url: https://github.com/abrek-koc/
+      - title: LinkedIn
+        url: https://www.linkedin.com/in/abrekkoch/
+      - title: email me
+        url: mailto:abrekkoch@outlook.com
+  # - title: kategori-1
+  #   post_list:
+  #     category: example2
+  #     show_more: true
+  #     show_more_text: See more posts...
+  #     show_more_url: example2-archive.html
