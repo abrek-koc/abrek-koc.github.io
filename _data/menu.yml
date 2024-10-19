@@ -10,7 +10,7 @@ entries:
       - title: recommended articles >
         url: reco_list.html
 
-  - title: <b> my links  </b>
+  - title: <b>social presence</b>
     entries:
       - title: github
         url: https://github.com/abrek-koc/
@@ -18,9 +18,6 @@ entries:
         url: https://www.linkedin.com/in/abrekkoch/
       - title: email me
         url: mailto:abrekkoch@outlook.com
-  # - title: kategori-1
-  #   post_list:
-  #     category: example2
-  #     show_more: true
-  #     show_more_text: See more posts...
-  #     show_more_url: example2-archive.html
+
+  - title: <b>Portfolio</b>
+      url: portfolio.html
