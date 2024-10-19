@@ -8,7 +8,7 @@ entries:
         url: archive.html
 
       - title: recommended articles &#9876;
-        url: reco_list.html
+        url: /reco_list/
 
   - title: <b>Social Presence</b>
     entries:
