@@ -4,22 +4,22 @@
 entries:
   - title: <b>Article Corner</b>
     entries:
-      - title: my articles >
+      - title: my articles &#9876;
         url: archive.html
 
-      - title: recommended articles >
+      - title: recommended articles &#9876;
         url: reco_list.html
 
   - title: <b>Social Presence</b>
     entries:
-      - title: github
+      - title: github &#9876;
         url: https://github.com/abrek-koc/
-      - title: LinkedIn
+      - title: LinkedIn &#9876;
         url: https://www.linkedin.com/in/abrekkoch/
-      - title: email me
+      - title: email me &#9876;
         url: mailto:abrekkoch@outlook.com
 
   - title: <b>Portfolio</b>
     entries:
-      - title: game where I am credited in >
+      - title: games I am credited in &#9876;
         url: portfolio.html
