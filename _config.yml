@@ -28,7 +28,7 @@ twitter_username: HorseLord_Abrek
 github_username:  abrek-koc
 
 # Build settings
-theme: no-style-please
+remote_theme: no-style-please
 plugins:
   - jekyll-feed
 
