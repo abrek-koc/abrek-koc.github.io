@@ -20,4 +20,6 @@ entries:
         url: mailto:abrekkoch@outlook.com
 
   - title: <b>Portfolio</b>
-    url: portfolio.html
+    entries:
+      - title: game projects >
+        url: portfolio.html
