@@ -4,8 +4,8 @@ email: abrekkoch@outlook.com
 url: https://abrek-koc.github.io
 baseurl: "/" 
 description: > # text 
-  <p>Localization Engineer, reads and writes about NLP, computational linguistics, and fun stuff.</p> <br> Currently working on embedded systems engineering. <br>
-  I also have an immense love for video games, gastronomy and <a href="https://open.spotify.com/user/11163527565/playlists" style="color: #d5d2d8;">music</a>.
+  <p>Localization Engineer, reads and writes about NLP, computational linguistics, and fun stuff.</p> <br> <p>Currently working on embedded systems engineering.</p> <br>
+  <p>I also have an immense love for video games, gastronomy and <a href="https://open.spotify.com/user/11163527565/playlists" style="color: #d5d2d8;">music</a>.</p>
 permalink: /:slug.html
 
 favicon: "favicon.png" 
