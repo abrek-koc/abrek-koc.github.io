@@ -4,7 +4,8 @@ email: abrekkoch@outlook.com
 url: https://abrek-koc.github.io
 baseurl: "/" 
 description: > # text 
-  Personal Website of Abrek Koç.
+  Localization Engineer, reads and writes about NLP, computational linguistics. Currently working on embedded systems engineering.<br><br>
+  I also have an immense love for video games, gastronomy and music (<a href="https://open.spotify.com/user/11163527565/playlists" style="color: #d5d2d8;">open for suggestions</a>).
 permalink: /:slug.html
 
 favicon: "favicon.png" 
