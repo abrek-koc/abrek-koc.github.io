@@ -5,7 +5,7 @@ url: https://abrek-koc.github.io
 baseurl: "/" 
 description: > # text 
   <p>Localization Engineer, reads and writes about NLP, computational linguistics, and fun stuff. Currently working on embedded systems engineering.</p>
-  <p>Also, I immensely love for video games, gastronomy and <a href="https://open.spotify.com/user/11163527565/playlists" style="color: #d5d2d8;">music &#9835;</a>.</p>
+  <p>Also, I immensely love video games, gastronomy and <a href="https://open.spotify.com/user/11163527565/playlists" style="color: #d5d2d8;">music &#9835;</a>.</p>
 permalink: /:slug.html
 
 favicon: "favicon.png" 
