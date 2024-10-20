@@ -26,5 +26,3 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  reco:
-    output: true
