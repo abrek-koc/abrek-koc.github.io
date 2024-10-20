@@ -1,8 +1,12 @@
 <ul>
     {%- assign posts = site[include.collection] | sort: 'date' | reverse -%}
-    {%- for post in posts -%}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} {{ post.title }}</a>
-      </li>
-    {%- endfor -%}
+    {%- if posts -%}
+      {%- for post in posts -%}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} {{ post.title }}</a>
+        </li>
+      {%- endfor -%}
+    {%- else -%}
+      <li>No posts found.</li>
+    {%- endif -%}
   </ul>
