@@ -6,6 +6,7 @@ permalink: /music/
 
 {%-include back_link.html-%}
 
+{{ page.title }}
 <div class="music-page-content">
   <div id="spotify-status-container">
     <div class="spotify-container">
