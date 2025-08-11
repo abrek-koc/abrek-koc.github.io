@@ -9,8 +9,6 @@ permalink: /music/
 {{ page.title }}
 
 <div class="music-page-content">
-  <p>Vibe Check</p>
-  
   <div id="spotify-status-container">
     <div class="spotify-container">
       <div class="spotify-title">
