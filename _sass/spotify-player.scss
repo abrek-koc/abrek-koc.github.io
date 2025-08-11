@@ -35,14 +35,15 @@
   image-rendering: pixelated;
 }
 
+
 .spotify-cover-wrapper {
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 136px; /* 128px image + 2*4px padding */
+  height: 136px;
   margin: 16px auto;
   padding: 4px;
   background-color: #111;
-  box-shadow: 0 0 0 1px #444, 2px 2px 0 1px #000, inset 0 0 10px rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 0 1px #444, 2px 2px 0 1px #000, inset 0 0 16px rgba(0, 255, 0, 0.12);
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -52,6 +53,7 @@
   box-shadow: 0 0 0 1px #555, 3px 3px 0 1px #000, inset 0 0 10px rgba(0, 255, 0, 0.2);
 }
 
+
 .spotify-cover-wrapper:before {
   content: "";
   position: absolute;
@@ -59,7 +61,7 @@
   left: -4px;
   right: -4px;
   bottom: -4px;
-  border: 1px dashed #4afa4a;
+  border: 2px dashed #4afa4a;
   pointer-events: none;
   z-index: 1;
 }
@@ -87,12 +89,13 @@
   100% { background-position: 100% 100%; }
 }
 
+
 .spotify-cover {
   width: 128px;
   height: 128px;
   object-fit: cover;
   image-rendering: pixelated;
-  border: 1px solid #555;
+  border: 2px solid #555;
   display: block;
   position: relative;
   z-index: 0;
@@ -108,10 +111,10 @@
   height: 100%;
   background: repeating-linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15) 1px,
-    transparent 1px,
-    transparent 2px
+    rgba(0, 0, 0, 0.13),
+    rgba(0, 0, 0, 0.13) 2px,
+    transparent 2px,
+    transparent 4px
   );
   pointer-events: none;
   z-index: 2;
