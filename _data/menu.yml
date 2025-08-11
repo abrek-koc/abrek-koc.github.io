@@ -17,7 +17,7 @@ entries:
       - title: email me &#9876;
         url: mailto:abrekkoch@outlook.com
       - title: spotify now playing &#9835;
-        url: https://open.spotify.com/user/11163527565
+        url: music
 
   - title: <b>Portfolio</b>
     entries:

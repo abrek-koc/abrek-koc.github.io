@@ -36,8 +36,8 @@
 }
 
 .spotify-cover {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   margin: 10px auto;
   border: 2px solid #333;
   box-shadow: 2px 2px 0px #000;
@@ -115,4 +115,29 @@
 
 .spotify-link:hover {
   background-color: #198b42;
+}
+
+/* Music page specific styles */
+.music-page-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.music-page-extra {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  border: 1px dashed #4a4a4a;
+  font-size: 14px;
+}
+
+.music-page-extra a {
+  color: #1db954;
+  text-decoration: none;
+  border-bottom: 1px dotted #1db954;
+}
+
+.music-page-extra a:hover {
+  color: #1ed760;
+  border-bottom: 1px solid #1ed760;
 }
