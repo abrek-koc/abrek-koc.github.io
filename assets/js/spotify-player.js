@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error fetching Spotify data:', error);
         spotifyStatusContainer.innerHTML = `
           <div class="spotify-container">
-            <div class="spotify-title">RETRO TUNES</div>
+            <div class="spotify-title">No Songs For Now</div>
             <pre>╔═════════════════════╗
 ║      NO SIGNAL      ║
 ╚═════════════════════╝</pre>
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <div class="static"></div>
             </div>
             <div class="spotify-info">
-              <p>Unable to load Spotify data</p>
+              <p>Will Be Back!</p>
             </div>
           </div>
         `;
