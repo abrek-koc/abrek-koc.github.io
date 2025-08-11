@@ -35,14 +35,86 @@
   image-rendering: pixelated;
 }
 
+.spotify-cover-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 16px auto;
+  padding: 4px;
+  background-color: #111;
+  box-shadow: 0 0 0 1px #444, 2px 2px 0 1px #000, inset 0 0 10px rgba(0, 255, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Screen glow on hover */
+.spotify-cover-wrapper:hover {
+  box-shadow: 0 0 0 1px #555, 3px 3px 0 1px #000, inset 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.spotify-cover-wrapper:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 1px dashed #4afa4a;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* TV static effect for no-signal state */
+.spotify-cover-wrapper.no-signal {
+  background-color: #222;
+  overflow: hidden;
+}
+
+.spotify-cover-wrapper .static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP/AOW3MEoAAAAZSURBVBjTY6AZMIqAUQSMImAUAaMIoAgAE6wCbvvCqvIAAAAASUVORK5CYII=");
+  background-size: 6px;
+  opacity: 0.3;
+  animation: staticAnimation 0.5s steps(3, end) infinite;
+}
+
+@keyframes staticAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
 .spotify-cover {
-  width: 80px;
-  height: 80px;
-  margin: 10px auto;
-  border: 2px solid #333;
-  box-shadow: 2px 2px 0px #000;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
   image-rendering: pixelated;
+  border: 1px solid #555;
   display: block;
+  position: relative;
+  z-index: 0;
+}
+
+/* Scanline effect */
+.spotify-cover-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 2;
 }
 
 .spotify-info {

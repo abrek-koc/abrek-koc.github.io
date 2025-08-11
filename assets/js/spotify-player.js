@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <pre>╔═════════════════════╗
 ║     NOW PLAYING     ║
 ╚═════════════════════╝</pre>
-            <img class="spotify-cover" src="${data.cover_image}" alt="Album cover">
+            <div class="spotify-cover-wrapper">
+              <img class="spotify-cover" src="${data.cover_image}" alt="Album cover">
+            </div>
             <div class="spotify-info">
               <div class="song-name">${data.song_name}</div>
               <div class="artist-name">${data.artist}</div>
@@ -49,6 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <pre>╔═════════════════════╗
 ║      NO SIGNAL      ║
 ╚═════════════════════╝</pre>
+            <div class="spotify-cover-wrapper no-signal">
+              <div class="static"></div>
+            </div>
             <div class="spotify-info">
               <p>Unable to load Spotify data</p>
             </div>
