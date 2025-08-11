@@ -1,0 +1,118 @@
+.spotify-container {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #333;
+  background-color: #2a2a2a;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  box-shadow: 4px 4px 0px #000;
+  image-rendering: pixelated;
+  color: #d5d2d8;
+}
+
+.spotify-container pre {
+  margin: 5px 0;
+  color: #4afa4a;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.spotify-title {
+  margin: 0;
+  padding: 4px;
+  font-size: 16px;
+  border-bottom: 1px dotted #d5d2d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotify-title img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  image-rendering: pixelated;
+}
+
+.spotify-cover {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0px #000;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.spotify-info {
+  margin: 8px 0;
+  padding: 4px;
+  border-top: 1px dotted #d5d2d8;
+  font-size: 14px;
+}
+
+.song-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #61dafb;
+}
+
+.artist-name {
+  font-style: italic;
+}
+
+.spotify-status {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #4afa4a;
+  animation: blink 1.5s infinite;
+}
+
+.spotify-status.paused {
+  color: #fa4a4a;
+  animation: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.play-button {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 14px;
+  border-color: transparent transparent transparent #4afa4a;
+  margin-right: 5px;
+}
+
+.pause-bars {
+  display: inline-flex;
+  gap: 3px;
+  margin-right: 5px;
+}
+
+.pause-bar {
+  width: 3px;
+  height: 14px;
+  background-color: #fa4a4a;
+}
+
+.spotify-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 10px;
+  background-color: #1db954;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #198b42;
+  box-shadow: 2px 2px 0px #000;
+}
+
+.spotify-link:hover {
+  background-color: #198b42;
+}
