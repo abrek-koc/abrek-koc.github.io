@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const spotifyStatusContainer = document.getElementById('spotify-status-container');
   
-  // Check if container exists on the page
   if (!spotifyStatusContainer) return;
   
   function generateAsciiFrame() {
@@ -59,9 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
   
-  // Initial update
   updateSpotifyStatus();
   
-  // Update every 30 seconds
   setInterval(updateSpotifyStatus, 30000);
 });
