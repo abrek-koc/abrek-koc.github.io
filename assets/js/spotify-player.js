@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function updateSpotifyStatus() {
-    fetch('https://n8n.abrek.codes/webhook/e3b2a556-eb30-4f7c-9e4c-49768381e1e0')
+    fetch('https://n8n.ardaerbaharli.com/webhook/e3b2a556-eb30-4f7c-9e4c-49768381e1e0')
       .then(response => response.json())
       .then(data => {
         const isPlaying = data.is_playing === 'true';
